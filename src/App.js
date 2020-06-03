@@ -13,7 +13,7 @@ function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
   const [isAuthenticated, userHasAuthenticated] = useState(false);
   useEffect(() => {
-    onLoad();
+    onLoad();    
   }, []);
 
   async function onLoad() {
@@ -42,7 +42,7 @@ function App() {
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">Scratch</Link>
+              <Link to="/">Jotter</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
