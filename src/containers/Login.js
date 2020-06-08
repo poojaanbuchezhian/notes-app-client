@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Auth } from "aws-amplify";
-import { Link } from "react-router-dom";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
@@ -36,6 +36,7 @@ export default function Login() {
 
   return (
     <div className="Login">
+    <img class="profile-img" src="https://image.flaticon.com/icons/svg/2948/2948035.svg" alt=""/>
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
           <ControlLabel>Email</ControlLabel>

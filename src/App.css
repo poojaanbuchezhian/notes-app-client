@@ -2,6 +2,12 @@
   margin-top: 15px;
 }
 
+.App .navbar{
+  background-color: purple;
+  color:white;
+}
+
 .App .navbar-brand {
+  color:white;
   font-weight: bold;
 }

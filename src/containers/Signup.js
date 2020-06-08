@@ -1,3 +1,4 @@
+import { Auth } from "aws-amplify";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import {
@@ -10,7 +11,6 @@ import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
 import { onError } from "../libs/errorLib";
-import { Auth } from "aws-amplify";
 import "./Signup.css";
 
 export default function Signup() {
@@ -71,7 +71,6 @@ export default function Signup() {
       setIsLoading(false);
     }
   }
-
   function renderConfirmationForm() {
     return (
       <form onSubmit={handleConfirmationSubmit}>
@@ -118,6 +117,10 @@ export default function Signup() {
             onChange={handleFieldChange}
           />
         </FormGroup>
+        <ul>
+        <li><h6>Password length should be greater than or equal to 6.</h6></li>
+        <li><h6>Password must contain a digit,a special character,lowercase and uppercase alphabet</h6></li>
+        </ul>
         <FormGroup controlId="confirmPassword" bsSize="large">
           <ControlLabel>Confirm Password</ControlLabel>
           <FormControl

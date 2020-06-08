@@ -64,6 +64,10 @@ export default function ChangePassword() {
             value={fields.password}
           />
         </FormGroup>
+        <ul>
+        <li><h6>Password length should be greater than or equal to 6.</h6></li>
+        <li><h6>Password must contain a digit,a special character,lowercase and uppercase alphabet</h6></li>
+        </ul>
         <FormGroup bsSize="large" controlId="confirmPassword">
           <ControlLabel>Confirm Password</ControlLabel>
           <FormControl
