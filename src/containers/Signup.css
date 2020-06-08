@@ -7,15 +7,14 @@
     margin: 0 auto;
     max-width: 320px;
   }
-}
-
-.Signup form span.help-block {
-  font-size: 14px;
-  padding-bottom: 10px;
-  color: #999;
-}
-.Signup ul{
-  position: absolute;
-  margin-top:-75px;
-  margin-left: 320px;
+  .Signup form span.help-block {
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #999;
+  }
+  .Signup ul{
+    position: absolute;
+    margin-top:-75px;
+    margin-left: 320px;
+  }
 }

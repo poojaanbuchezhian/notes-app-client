@@ -43,7 +43,6 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/notes/:id">
         <Notes />
       </AuthenticatedRoute>
-            {/* Finally, catch all unmatched routes */}
       <Route>
         <NotFound />
       </Route>
